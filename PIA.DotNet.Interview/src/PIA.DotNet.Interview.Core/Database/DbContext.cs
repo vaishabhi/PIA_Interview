@@ -28,7 +28,7 @@ namespace PIA.DotNet.Interview.Core.Database
             return (ICollection<T>)property.GetValue(_database);
         }
 
-        public bool Save()
+        public bool Save(File file)
         {
             if (_database == null)
                 return false;
@@ -37,8 +37,7 @@ namespace PIA.DotNet.Interview.Core.Database
 
             if (File.Exists(DATABASE_PATH))
                 File.Delete(DATABASE_PATH);
-
-            File.WriteAllText(DATABASE_PATH, json);
+            file.WriteAllText(DATABASE_PATH, json);
 
             return true;
         }
@@ -48,7 +47,8 @@ namespace PIA.DotNet.Interview.Core.Database
             if (!File.Exists(DATABASE_PATH))
             {
                 _database = InitializeDatabase();
-                Save();
+                Save(
+            File);
             }
 
             string json = File.ReadAllText(DATABASE_PATH);

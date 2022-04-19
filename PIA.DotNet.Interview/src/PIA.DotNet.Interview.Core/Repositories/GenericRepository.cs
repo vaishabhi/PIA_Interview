@@ -42,7 +42,8 @@ namespace PIA.DotNet.Interview.Core.Repositories
             model.Id = Guid.NewGuid();
 
             _dataset.Add(model);
-            _dbContext.Save();
+            _dbContext.Save(
+            File);
             return true;
         }
 
@@ -55,7 +56,8 @@ namespace PIA.DotNet.Interview.Core.Repositories
                 return false;
 
             _dataset.Add(model);
-            _dbContext.Save();
+            _dbContext.Save(
+            File);
             return true;
         }
 
@@ -67,7 +69,8 @@ namespace PIA.DotNet.Interview.Core.Repositories
             if (!_dataset.Remove(model))
                 return false;
 
-            _dbContext.Save();
+            _dbContext.Save(
+            File);
             return true;
         }
     }
