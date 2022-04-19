@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CWfA5Spon+uondv3UzqKc0WqYmSe8hyW4J/TZFHbXWIfOTh9eFAs7iQsriN3pt9rQvWG/K7qJM/Cj2/8KxMc3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vaishnavi\\source\\repos\\PIA_Interview\\PIA.DotNet.Interview\\src\\PIA.DotNet.Interview.Core\\PIA.DotNet.Interview.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vaishnavi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
